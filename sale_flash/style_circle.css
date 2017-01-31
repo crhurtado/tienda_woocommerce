@@ -1,0 +1,55 @@
+.bubble {
+  left: 0px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 9;
+}
+
+.bubble .inside {
+  background: url('http://outlethogar.cl/codex/wp-content/uploads/2017/01/etiquetayellow.png');
+  background-size: 100% 100%;
+  display: table;
+  height: 60px;
+  position: relative;
+  width: 60px;
+}
+
+.bubble .inside .inside-text {
+  color: #000;
+  display: table-cell;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 13px;
+  text-align: center;
+  vertical-align: bottom;
+  padding-bottom: 10%
+}
+
+.bubblered {
+  left: 0px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 9;
+}
+
+.bubblered .inside {
+  background: url('http://outlethogar.cl/codex/wp-content/uploads/2017/01/etiquetared.png');
+  background-size: 100% 100%;
+  display: table;
+  height: 60px;
+  position: relative;
+  width: 60px;  
+}
+
+.bubblered .inside .inside-text {
+  color: #fff;
+  display: table-cell;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 13px;
+  text-align: center;
+  vertical-align: bottom;
+  padding-bottom: 10%
+}
