@@ -1,0 +1,44 @@
+del, ins {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-flow: wrap !important;
+  align-items: center !important;
+}
+
+.comp, .prop, .woocommerce ul.products li.product del .comp, .woocommerce ul.products li.product ins .prop {
+  max-height: 35px !important;
+  display: inline !important;
+  margin: 0px !important;
+  width: auto;
+ margin-left: 1% !important;
+}
+
+.comp {
+  height: 25px !important;
+}
+
+.deldesc,.insdesc{
+  display: block !important;  
+}
+
+.deldesc small, .insdesc small {
+  font-size: 11px !important;
+}
+
+.single-product .deldesc small, .single-product .insdesc small {
+  font-size: 18px !important;
+}
+
+.woocommerce ul.product_list_widget .deldesc span, .woocommerce ul.product_list_widget .insdesc span {
+  font-size: 12px !important;
+}
+
+.woocommerce ul.product_list_widget .deldesc small, .woocommerce ul.product_list_widget .deldesc .woocommerce-price-suffix, .woocommerce ul.product_list_widget .insdesc small, .woocommerce ul.product_list_widget .insdesc .woocommerce-price-suffix {
+  font-size: 8px !important;
+}
+
+.woocommerce ul.product_list_widget ins .prop, .woocommerce ul.product_list_widget del .comp {
+  height: auto !important;
+  width: 20px !important;
+  margin-left: 3px !important;
+}
