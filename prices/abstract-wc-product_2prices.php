@@ -143,9 +143,9 @@
 		if ( $mayor==1 ) {
 			$to = $to /3;
 			$from = $from/3;
-			$price = '<del><span class="deldesc"> <span> Ref. </span>' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) . $this->get_price_suffix(). ' <small> (c/u)</small></span> <img class="comp" src="http://outlethogar.cl/codex/wp-content/uploads/2017/02/'.$icon_card.'"></del><ins><span class="insdesc"> <span> Mayor: </span>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ). $this->get_price_suffix() . '<small> (c/u)</small></span><img class="prop" src="http://outlethogar.cl/codex/wp-content/uploads/2017/01/icon.png"></ins>';
+			$price = '<del><span class="deldesc"> <span> Competencia: </span>' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) .'</span> <img class="comp" src="http://outlethogar.cl/codex/wp-content/uploads/2017/02/'.$icon_card.'"></del><ins><span class="insdesc"> <span> Mayor: </span>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ). $this->get_price_suffix() . '<small> (c/u)</small></span><img class="prop" src="http://outlethogar.cl/codex/wp-content/uploads/2017/01/icon.png"></ins>';
 	}else {
-		$price = '<del><span class="deldesc"> <span> Ref. </span>' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) . $this->get_price_suffix(). ' <small> (c/u)</small></span> <img class="comp" src="http://outlethogar.cl/codex/wp-content/uploads/2017/02/'.$icon_card.'"></del> <ins><span class="insdesc"><span> Detalle: </span>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ). $this->get_price_suffix() . ' <small> (c/u)</small></span><img class="prop" src="http://outlethogar.cl/codex/wp-content/uploads/2017/01/icon.png"></ins>';
+	$price = '<del><span class="deldesc"> <span> Competencia: </span>' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) . '</span> <img class="comp" src="http://outlethogar.cl/codex/wp-content/uploads/2017/02/'.$icon_card.'"></del> <ins><span class="insdesc"><span> Detalle: </span>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ). $this->get_price_suffix() . ' <small> (c/u)</small></span><img class="prop" src="http://outlethogar.cl/codex/wp-content/uploads/2017/01/icon.png"></ins>';
 	}
 		/*
 			$price = '<del>' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) . '</del> <ins>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ) . '</ins>';
@@ -172,8 +172,7 @@
 		}
 		/* Check if it is existing in the array to output some value */
 
-		if (in_array ( "c1", $tager ) ) { 
-		   $icon_card="azul.png";
+		if (in_array ( "c1", $tager ) ) { $icon_card="azul.png";
 		} elseif (in_array ( "c2", $tager )) { $icon_card="roja.png";}
 		elseif (in_array ( "c3", $tager )) { $icon_card="verde.png";}
 		elseif (in_array ( "c4", $tager )) { $icon_card="verdeclaro.png";}
@@ -185,9 +184,9 @@
 		} else { $mayor=0;}
 
 		if ( $mayor==1 ) {
-		$price = '<del><span class="deldesc"> <span> Ref. </span>' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) . $this->get_price_suffix(). ' <small> (c/u)</small></span> <img class="comp" src="http://outlethogar.cl/codex/wp-content/uploads/2017/02/'.$icon_card.'"></del><ins><span class="insdesc"> <span> Mayor: </span>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ). $this->get_price_suffix() . ' <small> (c/u)</small></span><img class="prop" src="http://outlethogar.cl/codex/wp-content/uploads/2017/01/icon.png"></ins>';
+		$price = '<del><span class="deldesc"> <span> Competencia: </span>' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) .'</span> <img class="comp" src="http://outlethogar.cl/codex/wp-content/uploads/2017/02/'.$icon_card.'"></del><ins><span class="insdesc"> <span> Mayor: </span>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ). $this->get_price_suffix() . ' <small> (c/u)</small></span><img class="prop" src="http://outlethogar.cl/codex/wp-content/uploads/2017/01/icon.png"></ins>';
 		}else {
-		$price = '<del><span class="deldesc"> <span> Ref. </span>' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) . $this->get_price_suffix(). ' <small> (c/u)</small></span> <img class="comp" src="http://outlethogar.cl/codex/wp-content/uploads/2017/02/'.$icon_card.'"></del> <ins><span class="insdesc"><span> Detalle: </span>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ). $this->get_price_suffix() . ' <small> (c/u)</small></span><img class="prop" src="http://outlethogar.cl/codex/wp-content/uploads/2017/01/icon.png"></ins>';
+		$price = '<del><span class="deldesc"> <span> Competencia: </span>' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) . '</span> <img class="comp" src="http://outlethogar.cl/codex/wp-content/uploads/2017/02/'.$icon_card.'"></del> <ins><span class="insdesc"><span> Detalle: </span>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ). $this->get_price_suffix() . ' <small> (c/u)</small></span><img class="prop" src="http://outlethogar.cl/codex/wp-content/uploads/2017/01/icon.png"></ins>';
 		}
 		/*
 			$price = '<del>' . ( ( is_numeric( $from ) ) ? wc_price( $from ) : $from ) . '</del> <ins>' . ( ( is_numeric( $to ) ) ? wc_price( $to ) : $to ) . '</ins>';
